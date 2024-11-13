@@ -1,0 +1,112 @@
+/* General Container */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    height: 90vh;
+}
+
+.success-message {
+    display: none;
+}
+
+.left-side {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Tech Buttons */
+.tech-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.tech-buttons button.selected {
+    border: 2px solid green;
+    background-color: lightgreen;
+}
+
+/* Right Side */
+.right-side {
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Add shadow to active technology */
+.list-group-item.active {
+    background-color: #cfe2f3;
+    border: 1px solid #0044cc;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+.description-box {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* Header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-left {
+    display: inline-block;
+}
+
+.nav-left a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-right {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.agent-name {
+    color: white;
+    margin-right: 10px;
+}

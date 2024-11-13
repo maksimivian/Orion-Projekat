@@ -1,0 +1,238 @@
+/* General Container */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.admin-box {
+    width: 100%;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-panel {
+    margin-top: 30px;
+}
+
+.admin-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.admin-button:hover {
+    background-color: #45a049;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hide the success message by default */
+.success-message {
+    display: none;
+    /* You can add other styles like background color, padding, etc. */
+}
+
+/* Left Side (Form) */
+.left-side {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Username Input */
+.input-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+/* Common styles for all option buttons */
+.option-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* Styles when an option button is selected */
+.option-btn.selected {
+    border: 3px solid blue;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Containers for dynamic buttons */
+.sub-tech-buttons,
+.problem-type-buttons,
+.problem-location-buttons,
+.problem-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+/* Tech Buttons */
+.tech-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tech-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.tech-buttons button.selected {
+    border: 3px solid blue;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Problem Buttons */
+.problem-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.problem-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.problem-buttons button.selected {
+    border: 3px solid blue;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Submit Button */
+.submit-container {
+    margin-top: 20px;
+}
+
+.submit-container button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-container button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.submit-container button:hover {
+    background-color: #45a049;
+}
+
+/* Right Side (Manual) */
+.right-side {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manual-title {
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.manual-content {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    color: #8b67ee;
+}
+
+.agent-name {
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,125 @@
+/* Globalne postavke */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    color: #8b67ee;
+}
+
+.agent-name {
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Sidebar i glavni sadržaj sa flexbox rasporedom */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Sidebar sa crtom između stavki */
+.sidebar {
+    width: 260px; /* Širina sidebar-a */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    height: 90%;
+}
+
+.sidebar-item {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.sidebar-itemx {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.sidebar-item:hover, .sidebar-item.active {
+    background-color: #ddd;
+}
+
+.sidebar .collapse .sidebar-item:hover {
+    background-color: #ddd; /* Pozadinska boja za hover efekat na podstavkama */
+}
+
+.sidebar .collapse {
+    display: none;
+}
+
+/* Glavni sadržaj (desna strana) */
+.main-content {
+    flex-grow: 1; /* Glavni sadržaj zauzima preostali prostor */
+    padding: 20px;
+    max-width: 100%; /* Maksimalna širina desnog panela */
+    height: calc(90vh - 50px); /* Oduzima visinu header-a i daje preostalu visinu */
+}
+
+/* Textarea za opis sa tehnologijama */
+textarea {
+    width: 100%; /* Puni širinu roditeljskog elementa */
+    height: calc(80vh - 60px); /* Puni visinu panela, oduzima visinu header-a */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Onemogućava promenu veličine textarea */
+    box-sizing: border-box; /* Uključuje padding u ukupnu dimenziju */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Collapse efekat */
+.collapse {
+    display: none;
+}
